@@ -1,0 +1,60 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.List li {
+  width: 100%;
+}
+
+.List a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.Btn {
+  background-color: #2e186a;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .List {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .List li {
+    width: unset;
+  }
+
+  .List a {
+    padding: 0 30px;
+  }
+
+  .Btn {
+    margin-left: 30px;
+  }
+}

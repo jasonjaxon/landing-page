@@ -1,0 +1,20 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100px;
+}
+
+.MenuIcon {
+  width: 9%;
+}
+
+.Logo {
+  width: 17%;
+}
+
+@media (min-width: 768px) {
+  .MenuIcon {
+    display: none;
+  }
+}

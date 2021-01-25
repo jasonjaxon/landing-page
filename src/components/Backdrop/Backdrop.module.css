@@ -1,0 +1,18 @@
+.Backdrop {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.4s ease;
+}
+
+.open {
+  opacity: 0.4;
+  z-index: 10;
+}
+.close {
+  opacity: 0;
+  z-index: -100;
+}
