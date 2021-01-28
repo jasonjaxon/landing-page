@@ -1,0 +1,15 @@
+.note {
+  width: 45%;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 4px 0;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 13px;
+  font-weight: 400;
+}

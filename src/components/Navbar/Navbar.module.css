@@ -1,8 +1,16 @@
 .Navbar {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
   height: 100px;
+  background-color: white;
 }
 
 .MenuIcon {
@@ -10,10 +18,10 @@
 }
 
 .Logo {
-  width: 17%;
+  max-width: 82px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .MenuIcon {
     display: none;
   }

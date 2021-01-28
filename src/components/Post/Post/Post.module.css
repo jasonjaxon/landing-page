@@ -1,0 +1,52 @@
+.post {
+  width: 100%;
+}
+
+.container {
+  padding: 80px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.postContent {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.visible {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.toTop {
+  transform: translateY(30%);
+}
+.toLeft {
+  transform: translateX(30%);
+}
+.toRight {
+  transform: translateX(-30%);
+}
+
+@media (min-width: 576px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .postContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .postContent:first-child {
+    padding-right: 10px;
+  }
+  .postContent:last-child {
+    padding-left: 10px;
+  }
+}

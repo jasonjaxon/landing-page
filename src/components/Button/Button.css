@@ -1,0 +1,74 @@
+:root {
+  --primary: #2e186a;
+  --warning: #ffd028;
+  --danger: #eb3f27;
+  --success: #75fa83;
+  --white: #fdfdfd;
+  --dark: #181717;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: scale(0.99);
+}
+
+.BTN__PRIMARY__SOLID {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.BTN__WARNING__SOLID {
+  background-color: var(--warning);
+  color: var(--white);
+}
+.BTN__DANGER__SOLID {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.BTN__SUCCESS__SOLID {
+  background-color: var(--success);
+  color: var(--white);
+}
+
+.BTN__PRIMARY__OUTLINE {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.BTN__WARNING__OUTLINE {
+  background-color: transparent;
+  border: 2px solid var(--warning);
+  color: var(--warning);
+}
+.BTN__DANGER__OUTLINE {
+  background-color: transparent;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+.BTN__SUCCESS__OUTLINE {
+  background-color: transparent;
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+
+.BTN__SMALL {
+  font-size: 14px;
+  padding: 12px 16px;
+}
+.BTN__MEDIUM {
+  font-size: 17px;
+  padding: 14px 20px;
+}
+.BTN__LARGE {
+  font-size: 20px;
+  padding: 16px 30px;
+}

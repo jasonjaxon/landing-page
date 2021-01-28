@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import Button from "./../../Button/Button";
+import * as names from "./../../Button/Names";
 
 import classes from "./ListItem.module.css";
 
@@ -17,7 +19,13 @@ function ListItem() {
           <NavLink to="/product">Product</NavLink>
         </li>
       </ul>
-      <button className={classes.Btn}>Contact</button>
+      <Button
+        type="button"
+        btnStyle={names.BTN__PRIMARY__SOLID}
+        btnSize={names.BTN__LARGE}
+      >
+        Contact
+      </Button>
     </div>
   );
 }

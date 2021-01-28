@@ -8,14 +8,16 @@ import classes from "./Navbar.module.css";
 function Navbar({ clicked, isMobile }) {
   return (
     <div className={classes.Navbar}>
-      <div className={classes.Logo}>
-        <Logo />
-      </div>
-      <div onClick={clicked} className={classes.MenuIcon}>
-        <MenuIcon />
-      </div>
+      <div className={classes.container}>
+        <div className={classes.Logo}>
+          <Logo />
+        </div>
+        <div onClick={clicked} className={classes.MenuIcon}>
+          <MenuIcon />
+        </div>
 
-      {!isMobile && <ListItem />}
+        {!isMobile && <ListItem />}
+      </div>
     </div>
   );
 }

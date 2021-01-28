@@ -1,0 +1,28 @@
+.btnBox {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnBox div {
+  width: fit-content;
+}
+
+@media (min-width: 576px) {
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnBox div {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .btnBox {
+    flex-direction: row;
+  }
+  .btnBox div {
+    margin-bottom: unset;
+  }
+}

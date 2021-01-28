@@ -1,5 +1,5 @@
 import React from "react";
-import LogoSVG from "./LogoSVG";
+import LogoSVG from "./../../assets/svg/LogoSVG";
 
 import classes from "./Logo.module.css";
 

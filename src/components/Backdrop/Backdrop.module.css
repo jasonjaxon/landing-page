@@ -5,14 +5,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  transition: opacity 0.4s ease;
-}
-
-.open {
   opacity: 0.4;
   z-index: 10;
+  transition: opacity 400ms ease;
 }
-.close {
+
+.fade-enter {
   opacity: 0;
-  z-index: -100;
+}
+.fade-enter-active {
+  opacity: 0.4;
+}
+
+.fade-exit {
+  opacity: 0;
 }

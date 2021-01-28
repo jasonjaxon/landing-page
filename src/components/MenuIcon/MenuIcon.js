@@ -1,5 +1,5 @@
 import React from "react";
-import MenuIconSVG from "./MenuIconSVG";
+import MenuIconSVG from "./../../assets/svg/MenuIconSVG";
 
 import classes from "./MenuIcon.module.css";
 
