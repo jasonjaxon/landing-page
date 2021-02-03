@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+
 import Navbar from "../../components/Navbar/Navbar";
+import HomePage from "../../pages/HomePage";
+import ContactPage from "../../pages/ContactPage/ContactPage";
 import Backdrop from "./../../components/Backdrop/Backdrop";
 import SideDrawer from "./../../components/SideDrawer/SideDrawer";
-import Hero from "./../../components/Posts/Hero/Hero";
-import Introduce from "./../../components/Posts/Introduce/Introduce";
-import Advantage from "./../../components/Posts/Advantage/Advantage";
-import PreMade from "../../components/Posts/PreMade/PreMade";
-import End from "../../components/Posts/End/End";
-import Contact from "./../../components/Posts/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
 
 import classes from "./Layout.module.css";
 
@@ -48,17 +45,13 @@ function Layout() {
         sideOpen={sideOpen}
         isMobile={isMobile}
       />
-
-      <Hero />
-      <Introduce />
-      <Advantage />
-      <PreMade />
-      <End />
-      <Contact />
-      <Footer />
       <Backdrop toggleClass={sideOpen} closed={() => toggleSideBar(false)} />
-
       <SideDrawer closed={() => toggleSideBar(false)} toggleClass={sideOpen} />
+
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/contact" component={ContactPage} />
+      </Switch>
     </div>
   );
 }

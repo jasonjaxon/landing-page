@@ -16,7 +16,7 @@ function SideDrawer({ toggleClass, closed }) {
           <MenuIcon />
         </div>
       </div>
-      <ListItem />
+      <ListItem closed={closed} />
     </div>
   );
 }

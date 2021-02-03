@@ -1,0 +1,128 @@
+@font-face {
+  font-family: yekan;
+  src: url("./YekanBakh-Medium.ttf");
+}
+
+.contact {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact * {
+  font-family: yekan, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto 0;
+  direction: rtl;
+  border: 1px solid #aaa;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 15px 22px -22px #000000;
+  box-shadow: 0px 15px 22px -22px #000000;
+}
+.form > div {
+  width: 100%;
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form input {
+  font-size: 15px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  flex-grow: 1;
+  outline: 0;
+}
+
+.form input::-webkit--internal-autofill-selected {
+  appearance: none;
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+}
+
+.form input:focus {
+  background-color: transparent;
+}
+.form select {
+  font-size: 15px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0;
+}
+.form label {
+  width: 25%;
+}
+
+.form > div span,
+.radioError {
+  width: 75%;
+  margin-right: 25%;
+  font-size: 13px;
+  color: red;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+
+.form .error input,
+.form .error select {
+  border: 1px solid #e84118;
+}
+
+.form .success input,
+.form .success select {
+  border: 1px solid #4cd137;
+}
+
+/* .username label,
+.username {
+  font-size: 18px;
+} */
+
+.form > div input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.form > div input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.genderContainer > div {
+  width: 100%;
+  display: flex;
+}
+.genderContainer > div {
+  width: 100%;
+  display: flex;
+}
+.genderContainer > div > p {
+  width: 25%;
+}
+.genderContainer > div > div {
+  margin-left: 20px;
+}
+.genderContainer > div label {
+  margin-left: 10px;
+}
+
+.form button {
+  padding: 6px 50px;
+  background-color: #4cd137;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  margin: 20px 0 0;
+  cursor: pointer;
+}
