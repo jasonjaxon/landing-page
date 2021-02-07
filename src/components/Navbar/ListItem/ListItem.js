@@ -15,15 +15,16 @@ function ListItem({ closed }) {
           </NavLink>
         </li>
         <li>
+          <NavLink onClick={closed} to="/slider">
+            Slider
+          </NavLink>
+        </li>
+        <li>
           <NavLink onClick={closed} to="/about">
             About
           </NavLink>
         </li>
-        <li>
-          <NavLink onClick={closed} to="/mission">
-            Mission
-          </NavLink>
-        </li>
+
         <li>
           <NavLink onClick={closed} to="/product">
             Product

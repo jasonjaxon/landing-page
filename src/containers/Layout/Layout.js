@@ -6,6 +6,7 @@ import HomePage from "../../pages/HomePage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 import Backdrop from "./../../components/Backdrop/Backdrop";
 import SideDrawer from "./../../components/SideDrawer/SideDrawer";
+import SliderPage from "./../../pages/Slider/SliderPage";
 
 import classes from "./Layout.module.css";
 
@@ -51,6 +52,7 @@ function Layout() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/slider" component={SliderPage} />
       </Switch>
     </div>
   );

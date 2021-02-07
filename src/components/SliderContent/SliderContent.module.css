@@ -1,0 +1,6 @@
+.sliderContent {
+  height: 100%;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: ease;
+}
